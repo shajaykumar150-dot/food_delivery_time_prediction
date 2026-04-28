@@ -62,3 +62,19 @@ Food-Delivery-Time-Prediction/
 │
 │── requirements.txt
 ```
+
+
+---
+
+## ⚙️ Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/your-username/food_delivery_time_prediction.git
+cd food_delivery_time_prediction
+
+2.Install dependencies: 
+pip install -r requirements.txt
+
+3.Run the application:
+python app.py
