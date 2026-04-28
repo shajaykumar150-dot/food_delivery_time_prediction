@@ -38,4 +38,25 @@ It integrates **Machine Learning, Flask backend, and a responsive frontend UI** 
 
 ---
 
+
+Food-Delivery-Time-Prediction/
+│── static/
+│ ├── css/
+│ ├── img/
+│ ├── js/
+│ ├── lib/
+│ └── scss/
+│
+│── templates/
+│
+│── app.py
+│── dltime.ipynb
+│── food.sql
+│
+│── model.pkl
+│── model_coloumns.pkl
+│── traffic_encoder.pkl
+│
+│── requirements.txt
+
 ## 📂 Project Structure
