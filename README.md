@@ -39,13 +39,16 @@ It integrates **Machine Learning, Flask backend, and a responsive frontend UI** 
 ---
 
 ## 📂 Project Structure
+## 📂 Project Structure
+
+```text
 Food-Delivery-Time-Prediction/
 │── static/
-│ ├── css/
-│ ├── img/
-│ ├── js/
-│ ├── lib/
-│ └── scss/
+│   ├── css/
+│   ├── img/
+│   ├── js/
+│   ├── lib/
+│   └── scss/
 │
 │── templates/
 │
@@ -58,5 +61,4 @@ Food-Delivery-Time-Prediction/
 │── traffic_encoder.pkl
 │
 │── requirements.txt
-
-
+```
