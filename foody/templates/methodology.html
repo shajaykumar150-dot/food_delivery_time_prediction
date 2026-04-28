@@ -1,0 +1,137 @@
+{% extends "base.html" %}
+{% block body %}
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <h1 class="display-3 mb-3 animated slideInDown">Methadology</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a class="text-body" href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-body" href="#">Pages</a></li>
+                    <li class="breadcrumb-item text-dark active" aria-current="page">Methadology</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+        <!-- Methodology Start -->
+        <div class="container-fluid bg-light bg-icon py-6">
+            <div class="container">
+
+                <div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="display-5 mb-3">Project Methodology</h1>
+                    <p>Complete workflow followed in building the Food Delivery Time Prediction system from data collection to web deployment.</p>
+                </div>
+
+                <div class="row g-4">
+
+                    <!-- Step 1 -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp">
+                        <div class="bg-white text-center h-100 p-4 p-xl-5">
+                            <img class="img-fluid mb-4" src="/static/img/icon-1.png" alt="">
+                            <h4 class="mb-3">1. Data Collection</h4>
+                            <p class="mb-4">
+                                Collected dataset containing delivery-related features such as distance, weather, traffic level, preparation time, and courier experience.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp">
+                        <div class="bg-white text-center h-100 p-4 p-xl-5">
+                            <img class="img-fluid mb-4" src="/static/img/icon-2.png" alt="">
+                            <h4 class="mb-3">2. Data Preprocessing</h4>
+                            <p class="mb-4">
+                                Handled missing values, cleaned data, converted categorical variables using encoding techniques, and prepared dataset for training.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp">
+                        <div class="bg-white text-center h-100 p-4 p-xl-5">
+                            <img class="img-fluid mb-4" src="/static/img/icon-3.png" alt="">
+                            <h4 class="mb-3">3. Exploratory Data Analysis</h4>
+                            <p class="mb-4">
+                                Analyzed data distribution, relationships between features, and identified key factors affecting delivery time.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp">
+                        <div class="bg-white text-center h-100 p-4 p-xl-5">
+                            <img class="img-fluid mb-4" src="/static/img/icon-1.png" alt="">
+                            <h4 class="mb-3">4. Feature Engineering</h4>
+                            <p class="mb-4">
+                                Selected important features and transformed variables to improve model performance and prediction accuracy.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp">
+                        <div class="bg-white text-center h-100 p-4 p-xl-5">
+                            <img class="img-fluid mb-4" src="/static/img/icon-2.png" alt="">
+                            <h4 class="mb-3">5. Model Building</h4>
+                            <p class="mb-4">
+                                Implemented regression models including Linear Regression, Decision Tree, Random Forest, and Support Vector Regression.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 6 -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp">
+                        <div class="bg-white text-center h-100 p-4 p-xl-5">
+                            <img class="img-fluid mb-4" src="/static/img/icon-3.png" alt="">
+                            <h4 class="mb-3">6. Model Evaluation</h4>
+                            <p class="mb-4">
+                                Evaluated models using R² score, MAE, MSE, and RMSE to select the best performing model.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 7 -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp">
+                        <div class="bg-white text-center h-100 p-4 p-xl-5">
+                            <img class="img-fluid mb-4" src="/static/img/icon-1.png" alt="">
+                            <h4 class="mb-3">7. Model Saving</h4>
+                            <p class="mb-4">
+                                Saved the trained model using joblib for later use in deployment and prediction.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 8 -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp">
+                        <div class="bg-white text-center h-100 p-4 p-xl-5">
+                            <img class="img-fluid mb-4" src="/static/img/icon-2.png" alt="">
+                            <h4 class="mb-3">8. Web Development</h4>
+                            <p class="mb-4">
+                                Designed a user-friendly web interface using HTML, CSS, and Bootstrap template for input and output display.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 9 -->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp">
+                        <div class="bg-white text-center h-100 p-4 p-xl-5">
+                            <img class="img-fluid mb-4" src="/static/img/icon-3.png" alt="">
+                            <h4 class="mb-3">9. Model Deployment</h4>
+                            <p class="mb-4">
+                                Integrated machine learning model with Flask backend to provide real-time delivery time predictions through the website.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Methodology End -->
+
+
+    {% endblock body %}

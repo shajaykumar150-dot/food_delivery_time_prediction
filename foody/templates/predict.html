@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+{% block body %}
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <h1 class="display-3 mb-3 animated slideInDown">Predict</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a class="text-body" href="#">Home</a></li>
+                    
+                    <li class="breadcrumb-item text-dark active" aria-current="page">Predict</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+                    <!-- Predict Start -->
+        <div class="container-xxl py-6">
+            <div class="container">
+
+                <div class="section-header text-center mx-auto mb-5 wow fadeInUp" style="max-width: 500px;">
+                    <h1 class="display-5 mb-3">Delivery Time Prediction</h1>
+                    <p>Enter details below to predict food delivery time.</p>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-10 wow fadeInUp">
+
+                        <div class="bg-light p-5 rounded">
+
+                            <form action="/predict" method="POST">
+
+                                <!-- Distance -->
+                                <div class="form-floating mb-3">
+                                    <input type="number" class="form-control" name="distance_km" placeholder="Distance" required>
+                                    <label>Distance (km)</label>
+                                </div>
+
+                                <!-- Traffic -->
+                                <div class="form-floating mb-3">
+                                    <select class="form-control" name="traffic_level">
+                                        <option value="0">Low</option>
+                                        <option value="1">Medium</option>
+                                        <option value="2">High</option>
+                                    </select>
+                                    <label>Traffic Level</label>
+                                </div>
+
+                                <!-- Preparation -->
+                                <div class="form-floating mb-3">
+                                    <input type="number" class="form-control" name="preparation_time_min" required>
+                                    <label>Preparation Time (min)</label>
+                                </div>
+
+                                <!-- Experience -->
+                                <div class="form-floating mb-3">
+                                    <input type="number" class="form-control" name="courier_experience_yrs" required>
+                                    <label>Courier Experience (years)</label>
+                                </div>
+
+                                <!-- Weather -->
+                                <div class="form-floating mb-3">
+                                    <select class="form-control" name="weather">
+                                        <option>Clear</option>
+                                        <option>Foggy</option>
+                                        <option>Rainy</option>
+                                        <option>Snowy</option>
+                                        <option>Windy</option>
+                                    </select>
+                                    <label>Weather</label>
+                                </div>
+
+                                <!-- Time -->
+                                <div class="form-floating mb-3">
+                                    <select class="form-control" name="time_of_day">
+                                        <option>Morning</option>
+                                        <option>Afternoon</option>
+                                        <option>Evening</option>
+                                        <option>Night</option>
+                                    </select>
+                                    <label>Time of Day</label>
+                                </div>
+
+                                <!-- Vehicle -->
+                                <div class="form-floating mb-4">
+                                    <select class="form-control" name="vehicle">
+                                        <option>Bike</option>
+                                        <option>Car</option>
+                                        <option>Scooter</option>
+                                    </select>
+                                    <label>Vehicle Type</label>
+                                </div>
+
+                                <!-- Button -->
+                                <div class="text-center">
+                                    <button class="btn btn-primary rounded-pill py-3 px-5" type="submit">
+                                        Predict
+                                    </button>
+                                </div>
+
+                            </form>
+
+                            <!-- RESULT -->
+                            {% if prediction %}
+                            <div class="text-center mt-5 border-start border-5 border-primary" >
+                                <h4 class="text-primary">Estimated Delivery Time</h4>
+                                <h2 class="fw-bold">{{ prediction }} minutes</h2>
+                            </div>
+                            {% endif %}
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Predict End -->
+   {% endblock body %}
